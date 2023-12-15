@@ -1,6 +1,5 @@
 section {
   background-color: #000;
-  height: 300px;
   padding-top: 70px;
 }
 
@@ -12,6 +11,7 @@ section {
   background-color: #edefee;
   padding: 20px;
 }
+
 .testimonial {
   border: 1px solid #000;
   width: 100px;
@@ -20,6 +20,7 @@ section {
   align-items: center;
   justify-content: center;
 }
+
 h1 {
   color: #fff;
   text-align: center;

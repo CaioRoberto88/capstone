@@ -4,7 +4,7 @@ import "./Main.css";
 
 const Main = () => {
   return (
-    <main>
+    <main id="menu">
       <h2 className="title-week">This week's Specials!</h2>
       <a className="menu-link" href="onlineMenu">
         Online Menu
