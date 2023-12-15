@@ -1,0 +1,23 @@
+.navbar {
+  height: 100px;
+}
+
+.navbar-brand {
+  position: relative;
+  left: 50px;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.navbar-nav {
+  position: relative;
+  left: 150px;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+

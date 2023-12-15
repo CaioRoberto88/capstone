@@ -1,18 +1,28 @@
 import React from "react";
 
+import "./Terstemonials.css";
+
 const Terstemonials = () => {
   return (
     <section>
-      <h2>Terstemonials</h2>
-      <div>
-        <h6>Rating</h6>
-        <div></div>
-        <h6>Rating</h6>
-        <div></div>
-        <h6>Rating</h6>
-        <div></div>
-        <h6>Rating</h6>
-        <div></div>
+      <h1>Testimonials</h1>
+      <div className="container">
+        <div>
+          <div className="rating">Rating</div>
+          <div className="testimonial"></div>
+        </div>
+        <div>
+          <div className="rating">Rating</div>
+          <div className="testimonial"></div>
+        </div>
+        <div>
+          <div className="rating">Rating</div>
+          <div className="testimonial"></div>
+        </div>
+        <div>
+          <div className="rating">Rating</div>
+          <div className="testimonial"></div>
+        </div>
       </div>
     </section>
   );

@@ -1,0 +1,59 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.logo-footer img {
+  height: 200px;
+  width: 150px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+footer h2 {
+  font-family: "Markazi Text", serif;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.gourmet-navigation,
+.contact,
+.social-media-links {
+  width: 30%;
+}
+
+.gourmet-navigation ul,
+.contact p,
+.social-media-links p {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .gourmet-navigation ul li a,
+footer .contact p,
+footer .social-media-links p {
+  font-family: "Karla", sans-serif;
+  text-decoration: none;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  footer h2 {
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  .gourmet-navigation,
+  .contact,
+  .social-media-links {
+    width: 100%;
+  }
+}

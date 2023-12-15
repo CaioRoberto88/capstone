@@ -1,23 +1,22 @@
 import React from "react";
 
+import "./About.css";
+
 const About = () => {
   return (
     <section>
-      <div>
-        <h2>Little Lemon</h2>
-        <h2>Chicargo</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime iste
-          amet dignissimos animi praesentium, fugiat aut ipsam autem illo ullam
-          debitis veniam quod delectus tempora corrupti dolorem incidunt
-          assumenda ratione inventore! Inventore consequuntur, modi quam iste,
-          officiis culpa blanditiis, reiciendis a libero excepturi eveniet
-          perferendis facere eaque ad. Amet, molestias.
-        </p>
-      </div>
-      <div>
-        <img src="" alt="img1" />
-        <img src="" alt="img2" />
+      <div className="about-container">
+        <div className="about-section">
+          <h2>Little Lemon</h2>
+          <h6>Chicago</h6>
+          <p>
+          Little Lemon is charming neighborhood bistro thatserves simples food and classic cocktails in a livery but casual enviroment. The restaurant features a locally sourced menu with daily specials.
+          </p>
+        </div>
+        <div className="image-section">
+          <div className="image"></div>
+          <div className="image image-overlap"></div>
+        </div>
       </div>
     </section>
   );
