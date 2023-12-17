@@ -12,7 +12,7 @@ const Header = () => {
           We are a family owned Mediterranean restaurant, focused on tradicional
           recipes served with a modern twist.
         </p>
-        <a className="btn-reserve-table" href="reserveATable">
+        <a className="btn-reserve-table" href="bookingPage">
           Reserve a Table
         </a>
       </div>

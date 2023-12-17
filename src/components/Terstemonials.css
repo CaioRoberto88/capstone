@@ -1,6 +1,6 @@
-section {
-  background-color: #000;
-  padding-top: 70px;
+#testimonials {
+  background-color: #333;
+  padding: 50px;
 }
 
 .container {
@@ -13,7 +13,7 @@ section {
 }
 
 .testimonial {
-  border: 1px solid #000;
+  border: 1px solid #333;
   width: 100px;
   height: 100px;
   display: flex;
@@ -22,7 +22,7 @@ section {
 }
 
 h1 {
-  color: #fff;
+  color: #edefee;
   text-align: center;
 }
 .rating {

@@ -20,4 +20,9 @@
   padding: 0 10px;
 }
 
+@media screen and (max-width: 992px) {
+  .navbar-nav li {
+    padding: 0 5px;
+  }
+}
 

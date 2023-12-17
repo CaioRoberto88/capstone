@@ -1,47 +1,55 @@
-import React from "react";
+import React, { useReducer } from "react";
+
+//React Router DOM
+import { Route, Routes } from "react-router-dom";
+
+//Components
+import BookingPage from "./BookingPage";
+import BookingConfirmed from "./BookingConfirmed";
 
 import "./Main.css";
 
 const Main = () => {
+  const seedRandom = function (seed) {
+    let m = 2 ** 35 - 31;
+
+    let a = 185852;
+
+    let s = seed % m;
+
+    return function () {
+      return (s = (s * a) % m) / m;
+    };
+  };
+
+  const fetchAPI = function (date) {
+    let result = [];
+    let random = seedRandom(date.getDate());
+    for (let i = 17; i <= 23; i++) {
+      if (random() < 0.5) {
+        result.push(i + ":00");
+      }
+    }
+    return result;
+  };
+
+  const initialState = { availableTimes: fetchAPI(new Date()) };
+
+  const [state, dispatch] = useReducer(updateTimes, initialState);
+
+  function updateTimes(state, date) {
+    return { availableTimes: fetchAPI(new Date()) };
+  }
+
   return (
-    <main id="menu">
-      <h2 className="title-week">This week's Specials!</h2>
-      <a className="menu-link" href="onlineMenu">
-        Online Menu
-      </a>
-      <div className="card-container">
-        <div className="card-dinner">
-          <img src="greek salad.jpg" alt="" />
-          <h6>Greek Salad</h6>
-          <span className="price">$12.99</span>
-          <p>
-            The famous greek salad of crispy letture, peppers, olives and our
-            Chicargo style feta cheese, garnished with crunchy garlic and
-            rosemary croutons.
-          </p>
-          <span className="orderDelivery">Order a delivery 44</span>
-        </div>
-        <div className="card-dinner">
-          <img src="bruchetta.png" alt="" />
-          <h6>Bruschetta</h6>
-          <span className="price">$5.99</span>
-          <p>
-            Our Bruschetta is made from grilled brand that has been smeared with
-            garlic and seasoned with salt and olive oil.
-          </p>
-          <span className="orderDelivery">Order a delivery 44</span>
-        </div>
-        <div className="card-dinner">
-          <img src="lemon dessert.jpg" alt="" />
-          <h6>Lemmon Dissert</h6>
-          <span className="price">5.00</span>
-          <p>
-            This comes straight from grandma's recipe book, every last
-            ingredient has been sourced and is as authentic as can be imagined.
-          </p>
-          <span className="orderDelivery">Order a delivery 44</span>
-        </div>
-      </div>
+    <main>
+      <Routes>
+        <Route
+          path="/bookingPage"
+          element={<BookingPage availableTimes={state} dispatch={dispatch} />}
+        />
+        <Route path="/confirmed" element={<BookingConfirmed />} />
+      </Routes>
     </main>
   );
 };

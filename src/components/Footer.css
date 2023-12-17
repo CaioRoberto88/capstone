@@ -2,7 +2,7 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: #fff;
 }
 
 .logo-footer img {
@@ -14,7 +14,7 @@ footer {
 
 footer h2 {
   font-family: "Markazi Text", serif;
-  color: #343a40;
+  color: #333;
   margin-bottom: 20px;
 }
 
@@ -36,10 +36,35 @@ footer .contact p,
 footer .social-media-links p {
   font-family: "Karla", sans-serif;
   text-decoration: none;
-  color: #343a40;
+  color: #333;
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 992px) {
+  footer h2 {
+    margin: 20px 0px;
+  }
+
+  .gourmet-navigation,
+  .contact,
+  .contact p,
+  .social-media-links,
+  .social-media-links p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer h2 {
+    margin: 20px 0px;
+  }
+
+  .gourmet-navigation,
+  .contact,
+  .social-media-links {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 576px) {
   footer {
     display: block;
@@ -53,7 +78,15 @@ footer .social-media-links p {
 
   .gourmet-navigation,
   .contact,
-  .social-media-links {
+  .contact p,
+  .social-media-links,
+  .social-media-links p {
     width: 100%;
+    position: relative;
+  }
+
+  .contact p,
+  .social-media-links p {
+    padding-left: 170px;
   }
 }

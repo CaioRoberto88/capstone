@@ -1,5 +1,4 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 
 //Components
 import Navbar from "./components/Navbar";
@@ -8,6 +7,7 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Terstemonials from "./components/Terstemonials";
 import About from "./components/About";
+import Menu from "./components/Menu";
 
 //CSS
 import "./App.css";
@@ -16,12 +16,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Header />} />
-        <Route path="/menu" element={<Main />} />
-        <Route path="/terstemonials" element={<Terstemonials />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <Header />
+      <Main />
+      <Menu />
+      <Terstemonials />
+      <About />
       <Footer />
     </>
   );

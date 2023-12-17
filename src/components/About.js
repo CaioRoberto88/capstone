@@ -4,7 +4,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div id="about">
+    <section id="about">
       <div className="about-container">
         <div className="about-section">
           <h2>Little Lemon</h2>
@@ -16,11 +16,11 @@ const About = () => {
           </p>
         </div>
         <div className="image-section">
-          <div className="image"></div>
-          <div className="image image-overlap"></div>
+          <div className="image shadow-lg"></div>
+          <div className="image image-overlap shadow-lg"></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

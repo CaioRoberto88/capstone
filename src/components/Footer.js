@@ -33,13 +33,15 @@ const Footer = () => {
       </div>
       <div className="contact">
         <h2>Contact</h2>
-        <p>Address: [Endereço]</p>
-        <p>Phone Number: [Número de telefone]</p>
-        <p>Email: [Email]</p>
+        <p><i className="bi bi-signpost"></i> Street N° 12, bolevard beach - MA.</p>
+        <p><i className="bi bi-telephone"></i> (99)-99999-9999</p>
+        <p><i className="bi bi-envelope-at"></i> littleLemon@.com</p>
       </div>
       <div className="social-media-links">
         <h2>Social Media Links</h2>
-        <p>[Ícones ou links de mídia social]</p>
+        <p><a href="/" target="_blank"><i className="bi bi-facebook"></i> Our Facebook</a></p>
+        <p><a href="/" target="_blank"><i className="bi bi-instagram"></i> Our Instagram</a></p>
+        <p><a href="/" target="_blank"><i className="bi bi-twitter-x"></i> Our X / Old Twitter</a></p>
       </div>
     </footer>
   );
