@@ -44,6 +44,7 @@ const Main = () => {
   return (
     <main>
       <Routes>
+        <Route path="/" element={""}/>
         <Route
           path="/bookingPage"
           element={<BookingPage availableTimes={state} dispatch={dispatch} />}

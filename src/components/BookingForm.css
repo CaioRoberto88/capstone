@@ -1,5 +1,5 @@
 #form-reserve-table {
-  height: 600px;
+  height: 700px;
   background-color: #edefee;
   padding-top: 100px;
 }
@@ -25,10 +25,12 @@ input {
   border: none;
 }
 
+.feedback-form {
+  color: #ff0000;
+}
 
 @media screen and (max-width: 768px) {
   form {
     width: 80%;
   }
-
 }

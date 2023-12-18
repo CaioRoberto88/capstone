@@ -48,14 +48,14 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../images//Mario\ and\ Adrian\ A.jpg");
+  background-image: url("../images//Mario\ and\ Adrian\ A.png");
   z-index: 2;
 }
 
 .image-overlap {
   left: 150px;
   top: -30px;
-  background-image: url("../images//Mario\ and\ Adrian\ b.jpg");
+  background-image: url("../images//Mario\ and\ Adrian\ b.png");
   z-index: 1;
 }
 

@@ -40,6 +40,18 @@ footer .social-media-links p {
   margin-bottom: 10px;
 }
 
+.gourmet-navigation ul li a {
+  transition: 0.3s;
+}
+
+.gourmet-navigation ul li a:hover {
+  color: #f4ce14;
+}
+
+.bi {
+  color: #333;
+}
+
 @media screen and (max-width: 992px) {
   footer h2 {
     margin: 20px 0px;

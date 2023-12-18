@@ -82,12 +82,21 @@ span {
 }
 
 .card-dinner .orderDelivery {
-  width: 100%;
+  width: 50%;
+  text-align: center;
+  background-color: #f4ce14;
+  padding: 10px;
+  border-radius: 16px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
   #menu {
     padding-top: 250px;
+  }
+
+  .card-dinner .orderDelivery {
+    width: 100%;
   }
 }
 

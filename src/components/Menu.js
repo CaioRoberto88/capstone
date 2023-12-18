@@ -11,7 +11,7 @@ const Menu = () => {
       </a>
       <div className="card-container">
         <div className="card-dinner">
-          <img src="greek salad.jpg" alt="" />
+          <img src="greek salad.png" alt="greek salad" />
           <h6>Greek Salad</h6>
           <span className="price">$12.99</span>
           <p>
@@ -22,7 +22,7 @@ const Menu = () => {
           <span className="orderDelivery">Order a delivery 44</span>
         </div>
         <div className="card-dinner">
-          <img src="bruchetta.png" alt="" />
+          <img src="bruchetta.png" alt="bruchetta" />
           <h6>Bruschetta</h6>
           <span className="price">$5.99</span>
           <p>
@@ -32,7 +32,7 @@ const Menu = () => {
           <span className="orderDelivery">Order a delivery 44</span>
         </div>
         <div className="card-dinner">
-          <img src="lemon dessert.jpg" alt="" />
+          <img src="lemon dessert.png" alt="lemon dessert" />
           <h6>Lemmon Dissert</h6>
           <span className="price">5.00</span>
           <p>

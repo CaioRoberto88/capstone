@@ -1,28 +1,32 @@
-.navbar {
-  height: 100px;
+.navbar ul li a {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.navbar ul li a:hover {
+  color: #f4ce14;
 }
 
-.navbar-brand {
-  position: relative;
-  left: 50px;
-}
+@media screen and (min-width: 992px) {
+  .navbar {
+    height: 100px;
+  }
 
-.navbar-brand img {
-  height: 50px;
-}
+  .navbar-brand {
+    position: relative;
+    left: 50px;
+  }
 
-.navbar-nav {
-  position: relative;
-  left: 150px;
-}
+  .navbar-brand img {
+    height: 50px;
+  }
 
-.navbar-nav li {
-  padding: 0 10px;
-}
+  .navbar-nav {
+    position: relative;
+    left: 150px;
+  }
 
-@media screen and (max-width: 992px) {
   .navbar-nav li {
     padding: 0 5px;
   }
 }
-
